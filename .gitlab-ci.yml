@@ -1,0 +1,24 @@
+stages:
+  - test
+
+static-analysis:
+  image: python:3.8
+  stage: test
+  before_script:
+    - pip install -r requirements.txt
+    - pip install flake8
+  script:
+    - flake8 main.py
+  except:
+    - dev
+
+code-analysis: 
+  image: python:3.8
+  stage: test
+  before_script:
+    - pip install -r requirements
+    - pip install pytest
+  script:
+    - python3 -m pytest main.py
+  except:
+    - dev
