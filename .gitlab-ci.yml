@@ -16,7 +16,7 @@ code-analysis:
   image: python:3.8
   stage: test
   before_script:
-    - pip install -r requirements
+    - pip install -r requirements.txt
     - pip install pytest
   script:
     - python3 -m pytest main.py
