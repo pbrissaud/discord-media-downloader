@@ -6,7 +6,7 @@ DiscordAttachementsExporter can be used to export attachements (files, pictures,
 
 The script needs Python (version > 3.5), pip and Docker to run.
 
-:heavy_check_mark Tested on Ubuntu 20.04 LTS with Python 3.8.5 , Pip 20.3.1 and Docker 19.03.13
+:heavy_check_mark: Tested on Ubuntu 20.04 LTS with Python 3.8.5 , Pip 20.3.1 and Docker 19.03.13
 
 The script should be runnable on all OS (tests incoming)
 
